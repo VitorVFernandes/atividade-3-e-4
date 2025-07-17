@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<style>
+        *{
+            text-align: center;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to top right, rgb(145, 145, 255), white);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            width: 500px;
+            background-image:linear-gradient(to top left, rgb(3, 87, 255), white);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        input{
+            padding: 5px;
+        }
+
+        label{
+            padding: auto;
+        }
+
+        button{
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        input:hover, button:hover, textarea:hover{
+            background-color: #cccccc8f;
+        }
+</style>
+<body>
+    <form action="">
+        <h2>Feedback</h2>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="endereco">Endereço:</label>
+        <input type="endereco" id="endereco" name="endereco" required>
+
+        <label for="tipofeedback">Qual o tipo de feedback:</label>
+        <select name="tipofeedback" id="tipofeedback">
+            <option value="">-- Selecione --</option>
+            <option value="elogio">Elogio</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="reclamacao">Reclamação</option>
+        </select>
+
+        <label for="campofeedback">Seu feedback:</label>
+        <textarea name="campofeedback" id="campofeedback" rows="4" required></textarea>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Vitor Fernandes</title>
+  <link rel="stylesheet" href="contato.css" />
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --cor-fundo: #0d0d0d;
+  --cor-caixa: #1a1a1a;
+  --cor-texto: #f1f1f1;
+  --cor-link: #00bfff;
+  --cor-hover: #a0e7ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: var(--cor-caixa);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  color: var(--cor-link);
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.contato-lista li {
+  margin-bottom: 16px;
+}
+
+.contato-lista a {
+  color: var(--cor-link);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contato-lista a:hover {
+  color: var(--cor-hover);
+}
+
+    </style>
+
+  <div class="container">
+    <h1>Entre em Contato</h1>
+    <p>Você pode falar comigo pelas redes abaixo:</p>
+
+    <ul class="contato-lista">
+      <li>
+        <strong>Telefone / WhatsApp:</strong>
+        <a href="https://wa.me/5551985883876" target="_blank">+55 (51) 98588-3876</a>
+      </li>
+      <li>
+        <strong>Instagram:</strong>
+        <a href="https://instagram.com/vitorhugofernandes" target="_blank">@vitorhugofernandes</a>
+      </li>
+      <li>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/VitorVFernandes" target="_blank">github.com/VitorVFernandes</a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px 10px 0 0 ;
+}
+
+/* Parágrafo com borda superior espessa */
+#importante {
+    border-top: 5px solid darkblue;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+main {
+    background-color: darkgray;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 0;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+h2 {
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.destaque {
+    background-color: rgb(147, 147, 234);
+    font-style: italic;
+    margin: 0;
+}

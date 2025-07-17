@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopneakers</title>
+</head>
+
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bebas Neue' ,sans-serif;
+      font-size: larger;
+    }
+
+    .conteiner {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 30px;
+      background-image: linear-gradient(to top right, red, black);
+      transition: 0.5s ;
+    }
+
+    @media(max-width: 1020px){
+        .galeria{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media(max-width: 765px){
+        .galeria{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media(max-width:480px){
+        .galeria{
+            grid-template-columns: repeat(1 fr);
+        }
+    }
+
+    .item img:hover{
+        transform: scale(1.05);
+        background-image: linear-gradient(to top right, rgb(255, 82, 82), black);
+        box-shadow: 3px 5px 20px 0px rgb(81, 81, 81);
+    }
+    </style>
+<body>
+    
+    <h2></h2>
+
+     <div class="conteiner">
+    <div class="galeria">
+      <div class="item">
+        <img src="imagens/jordan-5-offnoir.webp" alt="Jordan 5 Offnoir">
+        <p>JORDAN 5 OFFNOIR</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordan-bred.webp" alt="Jordan Bred Mid">
+        <p>JORDAN BRED MID</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordan-patent.webp" alt="Jordan 1 Patent">
+        <p>JORDAN 1 PATENT</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordan-preto-branco.webp" alt="Jordan Preto e Branco">
+        <p>JORDAN BLACKNWHITE</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordan-vermelho-branco.webp" alt="Jordan White Bred">
+        <p>JORDAN MID WHITE BRED</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordan4-redthunder.webp" alt="Jordan 4 RedThunder">
+        <p>JORDAN 4 REDTHUNDER</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordancourtside.png" alt="Jordan Courtside">
+        <p>JORDAN COURTSIDE</p>
+      </div>
+      <div class="item">
+        <img src="imagens/jordanrosa.webp" alt="Jordan Rosa">
+        <p>JORDAN PINKROSE</p>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

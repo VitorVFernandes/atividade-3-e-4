@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhas Habilidades - Vitor Fernandes</title>
+  <link rel="stylesheet" href="habilidades.css" />
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+:root {
+  --cor-fundo: #0d0d0d;
+  --cor-caixa: #1a1a1a;
+  --cor-texto: #f1f1f1;
+  --cor-destaque: #00bfff;
+  --cor-hover: #a0e7ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--cor-destaque);
+}
+
+header p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.habilidades {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.habilidade {
+  background-color: var(--cor-caixa);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--cor-destaque);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habilidade:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px var(--cor-destaque);
+}
+
+.habilidade h2 {
+  color: var(--cor-hover);
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (min-width: 700px) {
+  .habilidades {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+    </style>
+
+  <header>
+    <h1>Minhas Habilidades</h1>
+    <p>Conhecimentos e ferramentas que utilizo no meu dia a dia como desenvolvedor.</p>
+  </header>
+
+  <main>
+    <section class="habilidades">
+      <div class="habilidade">
+        <img src="" alt="">
+        <h2>HTML5</h2>
+        <p>Conhecimento sólido na criação de páginas bem estruturadas e semânticas.</p>
+      </div>
+
+      <div class="habilidade">
+        <img src="" alt="">
+        <h2>CSS3</h2>
+        <p>Criação de layouts modernos com Flexbox, Grid e animações.</p>
+      </div>
+
+      <div class="habilidade">
+        <img src="" alt="">
+        <h2>JavaScript</h2>
+        <p>Uso de JS para interatividade, manipulação do DOM e consumo de APIs.</p>
+      </div>
+
+      <div class="habilidade">
+        <img src="" alt="">
+        <h2>Git & GitHub</h2>
+        <p>Controle de versão, branches, commits e colaboração em repositórios.</p>
+      </div>
+
+      <div class="habilidade">
+        <img src="" alt="">
+        <h2>React.js</h2>
+        <p>Criação de componentes reutilizáveis e interfaces dinâmicas.</p>
+      </div>
+
+      <div class="habilidade">
+        <img src="" alt="">
+        <h2>Node.js</h2>
+        <p>Desenvolvimento de APIs básicas e manipulação de dados no back-end.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vitor Fernandes </p>
+  </footer>
+
+</
